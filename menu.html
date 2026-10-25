@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Menü · Araff Lounge &amp; Hookah</title>
+  <meta name="description" content="Araff menüsü: serpme kahvaltı, omlet ve menemen, tost, burger, pizza, makarna, tatlılar, kahveler, soğuk içecekler ve premium nargile.">
+  <meta name="theme-color" content="#2c2b27">
+  <link rel="icon" href="assets/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Jost:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <main>
+    <section class="page-hero">
+      <div class="hero-media"><img src="assets/cafe/serpme.jpg" alt="Araff serpme kahvaltı sofrası"></div>
+      <div class="wrap">
+        <span class="eyebrow light" data-reveal style="--d:500ms">Kahvaltıdan nargileye</span>
+        <h1 class="display" data-split style="--d:450ms">Menü</h1>
+        <p class="lead" data-reveal style="--d:800ms">Taze yerel malzemeler, özenle seçilmiş kahve çekirdekleri ve el yapımı tatlılar. Tüm fiyatlar Türk lirasıdır.</p>
+      </div>
+    </section>
+
+    <div class="menu-bar">
+      <div class="wrap">
+        <div class="chips" id="chips" role="tablist" aria-label="Menü kategorileri"></div>
+        <label class="search">
+          <span class="sr-only">Menüde ara</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+          <input id="q" type="search" placeholder="Menüde ara…" autocomplete="off">
+        </label>
+      </div>
+    </div>
+
+    <div class="wrap" id="menu"></div>
+    <div class="wrap empty-state" id="empty"><p class="h3">Aradığınız ürün bulunamadı.</p><p>Farklı bir kelime deneyin.</p></div>
+
+    <section class="cta-band" style="min-height:60svh">
+      <div class="bg" data-parallax="-0.15"><img src="assets/cafe/pizza-manzara.jpg" alt="" loading="lazy"></div>
+      <div class="inner">
+        <span class="eyebrow light" data-reveal>Sizi bekliyoruz</span>
+        <h2 class="h2" data-split>Manzarayı <em>yerinde</em> görün.</h2>
+        <div class="hero-actions" style="justify-content:center" data-reveal>
+          <a class="btn light" href="konum.html" data-magnetic>Yol Tarifi <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 12h15M13 6l6 6-6 6"/></svg></a>
+          <a class="btn ghost light" href="tel:+902222190202" data-magnetic>Hemen Ara</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div class="modal" id="qv" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="qv-name">
+    <div class="scrim" data-close></div>
+    <div class="panel">
+      <button class="close-x" data-close aria-label="Kapat"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M6 6l12 12M18 6 6 18"/></svg></button>
+      <div class="pic"><img id="qv-img" src="" alt=""></div>
+      <div class="txt">
+        <span class="eyebrow" id="qv-cat"></span>
+        <h2 class="h2" id="qv-name"></h2>
+        <p class="lead" id="qv-desc" style="margin:0"></p>
+        <div class="price" id="qv-price"></div>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/menu-data.js"></script>
+  <script src="js/menu-i18n.js"></script>
+  <script src="js/i18n.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/catalog.js"></script>
+  <script src="js/menu.js"></script>
+</body>
+</html>

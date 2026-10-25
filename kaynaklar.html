@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Görsel Kaynakları · Araff Lounge &amp; Hookah</title>
+  <meta name="theme-color" content="#2c2b27">
+  <link rel="icon" href="assets/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Jost:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-header="light">
+  <main>
+    <section class="page-head-plain">
+      <div class="wrap">
+        <span class="eyebrow" data-reveal>Lisanslar</span>
+        <h1 class="h2" data-split style="margin-top:18px">Görsel kaynakları</h1>
+        <p class="lead" data-reveal style="margin-top:18px">Menüdeki ürün fotoğrafları Pexels'in ücretsiz lisanslı görsellerinden hazırlanmış, arka planları beyaza çevrilmiştir.</p>
+      </div>
+    </section>
+    <section style="padding-bottom:clamp(80px,10vw,140px)">
+      <div class="wrap"><table class="credits" id="credits"></table></div>
+    </section>
+  </main>
+  <script src="js/menu-data.js"></script>
+  <script src="js/menu-i18n.js"></script>
+  <script src="js/credits-data.js"></script>
+  <script src="js/i18n.js"></script>
+  <script src="js/main.js"></script>
+  <script>
+  (function () {
+    const items = ARAFF.allItems(), C = window.ARAFF_CREDITS;
+    document.getElementById("credits").innerHTML = Object.keys(items).filter((id) => C[id]).map((id) => {
+      const c = C[id];
+      return `<tr><td><img src="${ARAFF.img(id)}" alt="" loading="lazy"></td><td><b>${ARAFF.esc(items[id].name)}</b><br><a href="${c.url}" target="_blank" rel="noopener">${ARAFF.esc(c.title)}</a></td><td>${ARAFF.esc(c.creator || "—")}</td><td>${ARAFF.esc(c.license)}</td></tr>`;
+    }).join("");
+  })();
+  </script>
+</body>
+</html>

@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Cafemiz · Araff Lounge &amp; Hookah</title>
+  <meta name="description" content="Araff'ın cam salonu, panoramik terası ve Eskişehir manzarası. İç ve dış mekân fotoğrafları.">
+  <meta name="theme-color" content="#2c2b27">
+  <link rel="icon" href="assets/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Jost:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <main>
+    <section class="page-hero" style="min-height:78svh">
+      <div class="hero-media"><img src="assets/cafe/teras-salon.jpg" alt="Araff teras salonu"></div>
+      <div class="wrap">
+        <span class="eyebrow light" data-reveal style="--d:500ms">Hikâyemiz</span>
+        <h1 class="display" data-split style="--d:450ms">Cafemiz</h1>
+        <p class="lead" data-reveal style="--d:800ms">Kadife koltuklar, ceviz ahşap, el yapımı çini zeminler ve önünüzde uzanan koca bir şehir.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap">
+        <div class="story">
+          <div>
+            <span class="eyebrow" data-reveal>Araff nedir?</span>
+            <p class="big-quote" data-split style="margin-top:22px">İki dünyanın arasında, <em>zamanın yavaşladığı</em> yer.</p>
+          </div>
+          <div data-reveal>
+            <p class="lead" style="margin-bottom:22px">Araff, kafe deneyimine duyulan tutkudan doğdu. Amacımız basit: arkadaşların buluştuğu, sohbetin uzadığı, şehrin en güzel manzarasının her masaya düştüğü bir yer olmak.</p>
+            <p>En iyi kahve çekirdeklerini özenle seçiyor, mutfağımızda taze ve yerel malzemeler kullanıyoruz. Sabahları serpme kahvaltı sofralarımız kurulur; öğleden sonra el yapımı tatlılarımız ve kahvelerimiz, akşamları ise şehir ışıklarına karşı premium nargile keyfi başlar.</p>
+            <p>Odunpazarı'nın yükseklerindeki konumumuzla dört mevsim farklı bir manzara sunuyoruz — yazın yemyeşil vadiler, kışın karla örtülü bir Eskişehir.</p>
+          </div>
+        </div>
+
+        <div class="amenities">
+          <div class="amenity" data-reveal>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><rect x="3" y="3" width="18" height="18" rx="1"/><path d="M12 3v18M3 12h18"/></svg>
+            <h3>Cam Salon</h3><p>Panoramik camlarla çevrili, dört mevsim kullanılabilen salon.</p>
+          </div>
+          <div class="amenity" data-reveal style="--d:100ms">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M3 20h18M5 20V10l7-6 7 6v10"/><path d="M9 20v-6h6v6"/></svg>
+            <h3>Açık Teras</h3><p>Yaz akşamları için şehir manzaralı açık oturma alanı.</p>
+          </div>
+          <div class="amenity" data-reveal style="--d:200ms">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M12 3c-2 2.5-2 4.5 0 6s2 3.5 0 6"/><path d="M8 21h8M9 21c0-3 6-3 6 0M12 15v3"/></svg>
+            <h3>Nargile Lounge</h3><p>Premium tütünler ve tek kullanımlık hijyenik marpuç.</p>
+          </div>
+          <div class="amenity" data-reveal style="--d:300ms">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M4 11h14a0 0 0 0 1 0 0v1a7 7 0 0 1-7 7 7 7 0 0 1-7-7v-1z"/><path d="M18 12h1a2 2 0 0 1 0 4h-1.5M8 4c0 1.5 1 1.5 1 3M12 4c0 1.5 1 1.5 1 3"/></svg>
+            <h3>Serpme Kahvaltı</h3><p>Haftanın her günü, sabah 08:00'den itibaren.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section bg-bone">
+      <div class="wrap">
+        <div class="section-head">
+          <div>
+            <span class="eyebrow" data-reveal>Galeri</span>
+            <h2 class="h2" data-split style="margin-top:18px">İçeriden ve <em>dışarıdan</em> Araff</h2>
+          </div>
+          <div class="gallery-filter chips" id="gfilter">
+            <button class="chip active" data-f="all">Tümü</button>
+            <button class="chip" data-f="ic">İç Mekân</button>
+            <button class="chip" data-f="dis">Dış Mekân</button>
+            <button class="chip" data-f="manzara">Manzara</button>
+            <button class="chip" data-f="lezzet">Lezzetler</button>
+          </div>
+        </div>
+        <div class="gallery" id="gallery">
+          <figure class="g-item" data-cat="ic" data-reveal><img src="assets/cafe/cam-salon.jpg" alt="Cam salon" loading="lazy"><figcaption>Cam salon</figcaption></figure>
+          <figure class="g-item" data-cat="dis" data-reveal><img src="assets/cafe/tabela.jpg" alt="Araff ahşap tabelası" loading="lazy"><figcaption>Girişimiz</figcaption></figure>
+          <figure class="g-item" data-cat="ic" data-reveal><img src="assets/cafe/teras-manzara.jpg" alt="Kadife koltuklar ve manzara" loading="lazy"><figcaption>Kadife köşe</figcaption></figure>
+          <figure class="g-item" data-cat="manzara" data-reveal><img src="assets/cafe/kis-manzara.jpg" alt="Karlı Eskişehir manzarası" loading="lazy"><figcaption>Kış manzarası</figcaption></figure>
+          <figure class="g-item" data-cat="lezzet" data-reveal><img src="assets/cafe/kahve-manzara.jpg" alt="Manzaraya karşı kahve" loading="lazy"><figcaption>Manzaraya karşı kahve</figcaption></figure>
+          <figure class="g-item" data-cat="ic" data-reveal><img src="assets/cafe/ic-mekan.jpg" alt="İç mekân" loading="lazy"><figcaption>İç mekân</figcaption></figure>
+          <figure class="g-item" data-cat="manzara" data-reveal><img src="assets/cafe/yaz-manzara.jpg" alt="Yaz manzarası" loading="lazy"><figcaption>Yaz manzarası</figcaption></figure>
+          <figure class="g-item" data-cat="lezzet" data-reveal><img src="assets/cafe/kahvalti-sofrasi.jpg" alt="Kahvaltı sofrası" loading="lazy"><figcaption>Kahvaltı sofrası</figcaption></figure>
+          <figure class="g-item" data-cat="ic" data-reveal><img src="assets/cafe/pencere-kahve.jpg" alt="Cam kenarında kahve" loading="lazy"><figcaption>Cam kenarı</figcaption></figure>
+          <figure class="g-item" data-cat="dis" data-reveal><img src="assets/cafe/kar-bahce.jpg" alt="Karlı bahçe" loading="lazy"><figcaption>Karlı bahçe</figcaption></figure>
+          <figure class="g-item" data-cat="ic" data-reveal><img src="assets/cafe/mermer-masa.jpg" alt="Mermer masalar" loading="lazy"><figcaption>Mermer masalar</figcaption></figure>
+          <figure class="g-item" data-cat="dis" data-reveal><img src="assets/cafe/gece-giris.jpg" alt="Gece girişi" loading="lazy"><figcaption>Gece girişi</figcaption></figure>
+          <figure class="g-item" data-cat="lezzet" data-reveal><img src="assets/cafe/pizza-manzara.jpg" alt="Pizza ve manzara" loading="lazy"><figcaption>Pizza &amp; manzara</figcaption></figure>
+          <figure class="g-item" data-cat="lezzet" data-reveal><img src="assets/cafe/serpme.jpg" alt="Serpme kahvaltı" loading="lazy"><figcaption>Serpme kahvaltı</figcaption></figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-band">
+      <div class="bg" data-parallax="-0.18"><img src="assets/cafe/yaz-manzara.jpg" alt="" loading="lazy"></div>
+      <div class="inner">
+        <span class="eyebrow light" data-reveal>Sizi bekliyoruz</span>
+        <h2 class="h2" data-split>Manzarayı <em>yerinde</em> görün.</h2>
+        <div class="hero-actions" style="justify-content:center" data-reveal>
+          <a class="btn light" href="tel:+902222190202" data-magnetic>Hemen Ara</a>
+          <a class="btn ghost light" href="konum.html" data-magnetic>Konum</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div class="lightbox" id="lb" aria-hidden="true" role="dialog" aria-modal="true" aria-label="Fotoğraf">
+    <button class="close-x" data-close aria-label="Kapat"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M6 6l12 12M18 6 6 18"/></svg></button>
+    <button class="lb-btn lb-prev" aria-label="Önceki"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M20 12H5M11 6l-6 6 6 6"/></svg></button>
+    <img alt="">
+    <button class="lb-btn lb-next" aria-label="Sonraki"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 12h15M13 6l6 6-6 6"/></svg></button>
+    <div class="cap"></div>
+  </div>
+
+  <script src="js/i18n.js"></script>
+  <script src="js/main.js"></script>
+  <script>
+  (function () {
+    const g = document.getElementById("gallery"), f = document.getElementById("gfilter"), lb = document.getElementById("lb");
+    const lbImg = lb.querySelector("img"), cap = lb.querySelector(".cap");
+    ARAFF.chipPill(f);
+    f.addEventListener("click", (e) => {
+      const b = e.target.closest(".chip"); if (!b) return;
+      f.querySelectorAll(".chip").forEach((c) => c.classList.toggle("active", c === b)); ARAFF.chipPill(f);
+      g.querySelectorAll(".g-item").forEach((it, i) => {
+        const show = b.dataset.f === "all" || it.dataset.cat === b.dataset.f;
+        it.classList.remove("in");
+        it.classList.toggle("hide", !show);
+        if (show) setTimeout(() => it.classList.add("in"), 40 + (i % 6) * 60);
+      });
+    });
+    let idx = 0;
+    const visible = () => [...g.querySelectorAll(".g-item:not(.hide)")];
+    function show(i) {
+      const v = visible(); idx = (i + v.length) % v.length;
+      lbImg.style.opacity = 0;
+      setTimeout(() => { lbImg.src = v[idx].querySelector("img").src; lbImg.alt = v[idx].querySelector("img").alt; cap.textContent = v[idx].querySelector("figcaption").textContent + "  ·  " + (idx + 1) + " / " + v.length; lbImg.style.opacity = 1; }, 180);
+    }
+    g.addEventListener("click", (e) => {
+      const it = e.target.closest(".g-item"); if (!it) return;
+      show(visible().indexOf(it)); lb.classList.add("open"); lb.setAttribute("aria-hidden", "false"); document.documentElement.style.overflow = "hidden";
+    });
+    const close = () => { lb.classList.remove("open"); lb.setAttribute("aria-hidden", "true"); document.documentElement.style.overflow = ""; };
+    lb.querySelector(".lb-prev").onclick = () => show(idx - 1);
+    lb.querySelector(".lb-next").onclick = () => show(idx + 1);
+    lb.addEventListener("click", (e) => { if (e.target === lb || e.target.closest("[data-close]")) close(); });
+    document.addEventListener("keydown", (e) => {
+      if (!lb.classList.contains("open")) return;
+      if (e.key === "Escape") close(); if (e.key === "ArrowLeft") show(idx - 1); if (e.key === "ArrowRight") show(idx + 1);
+    });
+  })();
+  </script>
+</body>
+</html>
