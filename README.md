@@ -45,6 +45,8 @@ assets/menu/           Ürün fotoğrafları (800×800, beyaz zemin, dosya adı 
 - **Metin çevirisi:** `js/i18n.js`. Anahtar Türkçe metnin kendisidir; sayfaya yeni bir Türkçe metin
   eklendiğinde aynısını anahtar olarak sözlüğe ekleyip İngilizce / Arapça / Rusça karşılıklarını yazın.
 - Bir dili doğrudan açan bağlantı: `index.html?lang=en` (`ar`, `ru`).
+- **CSS veya JS değiştirdikten sonra:** HTML dosyalarındaki `?v=20261026` etiketini yeni bir değerle
+  (örneğin bugünün tarihi) değiştirin; böylece ziyaretçilerin tarayıcısı eski dosyayı göstermez.
 
 ## Bilgisayarda çalıştırma
 
