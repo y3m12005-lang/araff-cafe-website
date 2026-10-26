@@ -53,7 +53,7 @@
         </div>
       </header>
       <div class="mobile-nav" aria-hidden="true">
-        ${pages.map(([h, n]) => `<a class="big" href="${h}"><span>${t(n)}</span></a>`).join("")}
+        ${pages.map(([h, n]) => `<a class="big" href="${h}"${h === here ? ' aria-current="page"' : ""}><span>${t(n)}</span>${icon.arrow}</a>`).join("")}
         <div class="lang-row">${Object.entries(I.LANGS).map(([k, v]) => `<button type="button" data-l="${k}" class="${k === I.lang ? "on" : ""}">${v.code}</button>`).join("")}</div>
         <div class="meta">${ADDRESS}<br><a href="tel:${PHONE}">${PHONE_LABEL}</a> · ${t("Her gün 08:00 – 01:00")}</div>
       </div>
