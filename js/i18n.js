@@ -188,7 +188,7 @@
     "Taksi": ["Taxi", "سيارة أجرة", "Такси"],
     "Şehir merkezinden kısa bir yolculuk. Şoföre \"Çankaya, Araff Cafe\" demeniz yeterli.": ["A short ride from the city centre. Just tell the driver \"Çankaya, Araff Cafe\".", "رحلة قصيرة من وسط المدينة. قل للسائق \"Çankaya, Araff Cafe\".", "Недалеко от центра. Просто скажите водителю «Çankaya, Araff Cafe»."],
     "Gelmeden önce": ["Before you come,", "قبل أن تأتي،", "Перед визитом"],
-    "yerinizi ayırtın.": ["reserve your seat.", "احجز مكانك.", "забронируйте место."],
+    "bizi arayın.": ["give us a call.", "اتصل بنا.", "позвоните нам."],
     "Bugün": ["Today", "اليوم", "Сегодня"],
     "Yarın": ["Tomorrow", "غداً", "Завтра"],
     "Şu an açık": ["Open now", "مفتوح الآن", "Сейчас открыто"],
