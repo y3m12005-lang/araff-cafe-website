@@ -422,7 +422,7 @@ body.hdr-hidden main .menu-bar { top: 0; }
 
 .gallery-filter { display: flex; gap: 6px; position: relative; max-width: 100%; flex: 0 1 auto; }
 .gallery { columns: 3; column-gap: clamp(12px, 1.6vw, 22px); }
-.g-item { break-inside: avoid; margin-bottom: clamp(12px, 1.6vw, 22px); border-radius: var(--r); overflow: hidden; position: relative; cursor: zoom-in; display: block; width: 100%; transition: opacity .5s var(--ease), transform .6s var(--ease); }
+.g-item { break-inside: avoid; margin: 0 0 clamp(12px, 1.6vw, 22px); border-radius: var(--r); overflow: hidden; position: relative; cursor: zoom-in; display: block; width: 100%; transition: opacity .5s var(--ease), transform .6s var(--ease); }
 .g-item img { width: 100%; height: auto; transition: transform 1.2s var(--ease), filter .6s; }
 .g-item:hover img { transform: scale(1.06); }
 .g-item figcaption {
