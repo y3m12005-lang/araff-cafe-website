@@ -1,5 +1,7 @@
 # Araff Lounge & Hookah — Web Sitesi
 
+**Canlı site / Live site:** https://y3m12005-lang.github.io/araff-cafe-website/
+
 Bu sitenin tüm kaynak kodu, görselleri ve hakları **Araff Lounge & Hookah**'a aittir.
 Site sade HTML + CSS + JavaScript ile yazılmıştır: derleme aracı, veritabanı, özel bir platform veya
 lisans ücreti yoktur. Herhangi bir web ajansı ya da yazılımcı bu klasörü açıp doğrudan çalışabilir.
